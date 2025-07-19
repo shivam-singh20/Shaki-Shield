@@ -1,0 +1,42 @@
+
+{
+  "name": "shakti-shield",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "install:timeout": "npm install --timeout=60000",
+    "install:registry": "npm install --registry https://registry.npmjs.org/",
+    "clean": "rm -rf node_modules package-lock.json && npm install"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.17",
+    "firebase": "^10.7.1",
+    "recharts": "^2.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.17"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "npmrc": {
+    "timeout": "60000",
+    "fetch-retries": "3",
+    "fetch-retry-mintimeout": "10000",
+    "fetch-retry-maxtimeout": "60000"
+  }
+}
